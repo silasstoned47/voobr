@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compra de Passagens Aéreas</title>
+    <!-- Outras tags head -->
+  <style>
+        /* estilo.css */
+        body, html {
+            height: 100%;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            background-color: #c1c1c1;            
+            font-family: Arial, sans-serif;
+            display: flex;
+
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 1px 18px 20px 3px rgb(0 0 0 / 41%);            
+            width: 90%; /* Definindo a largura do contêiner como 90% */
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        p {
+            color: #555;
+            font-size: 37px;
+            margin-bottom: 30px;
+        }
+
+        .form-container input, .form-container button {
+            padding: 40px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Garante que o padding não afete a largura total */
+        }
+
+        .form-container button {
+            background-color: #1a9244;
+            color: white;
+            font-weight: bold;
+            font-size: 45px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #EAB543;
+        }
+
+        /* Media query para ajustar o tamanho do contêiner em dispositivos móveis */
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 80%;
+            }
+        }
+    </style>
+  
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426880355"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11426880355');
+</script>
+</head>
+<body>
+    <div class="container">
+        <h1>Reserve Sua Passagem Aérea!</h1>
+        <p>Destinos incríveis a partir de R$120</p>
+
+        <div class="form-container">
+            <button onclick="handleButtonClick()">Buscar Voos ➜</button>
+        </div>
+    </div>
+
+    <script>
+        function handleButtonClick() {
+            // Disparar o evento do Pixel do Google Ads
+            gtag('event', 'conversion', {
+                'send_to': 'AW-11426880355/O_tiCNCl0ZkZEOO24cgq',
+                'event_callback': function () {
+                    // Redirecionar após o evento do pixel ser disparado
+                    window.location.href = "https://extraduda.com/passagens-baratas-voo/?utm_source=googleads&utm_medium=botao&utm_campaign=voobr1403";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
